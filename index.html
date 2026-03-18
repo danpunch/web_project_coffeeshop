@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Danilo" />
+    <meta name="description" content="Loja de Café do Danilo com a Tripleten" />
+    <title>Café</title>
+    <link rel="stylesheet" href="/vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Café especial</h1>
+      </header>
+
+      <main class="content">
+        <section class="recipes">
+          <h2>Receitas</h2>
+          <ul>
+            <li><a href="pages/americano.html">Americano</a></li>
+            <li><a href="pages/cappuccino.html">Cappuccino</a></li>
+          </ul>
+        </section>
+
+        <section class="reservation">
+          <h2>Reservar uma mesa</h2>
+          <form action="/reservation" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required />
+            <button type="submit">Reservar</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Café do Danilo. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  </body>
+</html>
